@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "queueData",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "email-sending",
+      "connection": "cardoroservicebus_SERVICEBUS"
+    }
+  ]
+}
