@@ -13,8 +13,8 @@ const sendQueue = async () => {
   // });
   await sender.sendMessages({
     body: {
-      name: "Chris Uclaray",
-      email: "xpenguin@mail.com",
+      name: "Juan Lansangan",
+      email: "juan.lansangan@mail.com",
       message: "Thank you for staying @cardoro, All is well!",
     },
   });
