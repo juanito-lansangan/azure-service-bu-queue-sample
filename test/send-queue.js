@@ -1,8 +1,8 @@
 const { ServiceBusClient } = require("@azure/service-bus");
+require("dotenv").config();
 
 const sendQueue = async () => {
-  const queueConnectionString =
-    "Endpoint=sb://cardoro-service-bus.servicebus.windows.net/;SharedAccessKeyName=cardoro-service-bus-policy;SharedAccessKey=WIiH1YvTEOV4coaI3y9GnaB0FGhfH2Eh0zEmaKKJf1E=;EntityPath=email-sending";
+  const queueConnectionString = process.env.QUEUE_CONNECTION_STRING;
 
   const serviceBus = new ServiceBusClient(queueConnectionString);
 
